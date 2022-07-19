@@ -1,3 +1,5 @@
+package org.sonaspy.other;
+
 /**
  * @author gnx
  */

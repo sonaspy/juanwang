@@ -19,13 +19,13 @@ public class S0102 {
             List<Integer> curLevel = new ArrayList<Integer>();
             int count = queue.size();
             for (int i = 0; i < count; i++) {
-                TreeNode node = queue.poll();
-                curLevel.add(node.val);
-                if (node.left != null) {
-                    queue.add(node.left);
+                root = queue.poll();
+                curLevel.add(root.val);
+                if (root.left != null) {
+                    queue.add(root.left);
                 }
-                if (node.right != null) {
-                    queue.add(node.right);
+                if (root.right != null) {
+                    queue.add(root.right);
                 }
             }
             res.add(curLevel);

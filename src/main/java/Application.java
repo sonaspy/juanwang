@@ -1,4 +1,6 @@
-import org.sonaspy.leetcode.S0003;
+import org.sonaspy.leetcode.S0007;
+
+import java.util.Arrays;
 
 /**
  * @author gnx
@@ -6,9 +8,17 @@ import org.sonaspy.leetcode.S0003;
 public class Application {
     public static void main(String[] args) {
 
-        S0003 s0003 = new S0003();
+        S0007 s0003 = new S0007();
 
-        System.out.println(s0003.lengthOfLongestSubstring("12344567"));
+        s0003.reverse(Integer.MAX_VALUE);
+
+        Integer[] a = {1, 2, 3};
+
+        Arrays.sort(a, (Integer o1, Integer o2) -> {
+            return o2 - o1;
+        });
+
+        System.out.println(Arrays.toString(a));
 
     }
 }
